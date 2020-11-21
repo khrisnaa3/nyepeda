@@ -3,20 +3,15 @@ package id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.fragments
 import android.content.Intent
 import android.os.Bundle
 import android.provider.AlarmClock
-import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.R
 import id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.viewmodels.UserViewModel
 import id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.viewmodels.WeightViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_settings.*
-import timber.log.Timber
 
 
 @AndroidEntryPoint
