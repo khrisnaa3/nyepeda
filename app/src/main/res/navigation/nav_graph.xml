@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/setupFragment">
+
+    <action android:id="@+id/action_global_trackingFragment"
+        app:destination="@+id/trackingFragment"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/cycleFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.fragments.CycleFragment"
+        android:label="CycleFragment" >
+        <action
+            android:id="@+id/action_cycleFragment_to_trackingFragment"
+            app:destination="@id/trackingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.fragments.SetupFragment"
+        android:label="SetupFragment" >
+        <action
+            android:id="@+id/action_setupFragment_to_cycleFragment"
+            app:destination="@id/cycleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.fragments.StatisticsFragment"
+        android:label="StatisticsFragment" />
+    <fragment
+        android:id="@+id/trackingFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.fragments.TrackingFragment"
+        android:label="TrackingFragment" >
+        <action
+            android:id="@+id/action_trackingFragment_to_cycleFragment"
+            app:destination="@id/cycleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>

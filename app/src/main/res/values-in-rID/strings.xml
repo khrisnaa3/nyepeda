@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start">MULAI</string>
+    <string-array name="filter_options">
+        <item>Tanggal</item>
+        <item>Jarak</item>
+    </string-array>
+    <string name="stop">BERHENTI</string>
+    <string name="finish">SELESAI SEPEDAAN</string>
+    <string name="cancel_title">Batalkan Sepedaan?</string>
+    <string name="cancel_desc">Apakah kamu yakin untuk membatalkan sepedaan dan menghapus datanya?</string>
+    <string name="no">TIDAK</string>
+    <string name="yes">YA</string>
+    <string name="warning_internet">Pastikan Anda terhubung ke internet.</string>
+    <string name="connected">TERKONEKSI</string>
+    <string name="disconnected">PUTUS KONEKSI</string>
+    <string name="cycling">Sepedaan</string>
+    <string name="history">Riwayat</string>
+    <string name="settings">Pengaturan</string>
+    <string name="alarm">PASANG ALARM</string>
+    <string name="hour">Jam</string>
+    <string name="minute">Menit</string>
+    <string name="weight">Berat:</string>
+    <string name="sort">"Urutkan: "</string>
+    <string name="continu">Lanjutkan</string>
+    <string name="saved">Sepedaan berhasil disimpan</string>
+</resources>
