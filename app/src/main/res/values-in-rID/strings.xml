@@ -24,4 +24,5 @@
     <string name="sort">"Urutkan: "</string>
     <string name="continu">Lanjutkan</string>
     <string name="saved">Sepedaan berhasil disimpan</string>
+    <string name="noperm">Aplikasi ini membutuhkan pengizinan lokasi untuk melacak dan menghitung lokasi/jarak. Mohon izinkan pengaksesan lokasi. Terima Kasih.</string>
 </resources>

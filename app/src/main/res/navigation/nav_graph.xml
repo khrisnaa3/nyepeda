@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_cycleFragment_to_trackingFragment"
             app:destination="@id/trackingFragment" />
+        <action
+            android:id="@+id/action_cycleFragment_to_noPermissionFragment"
+            app:destination="@id/noPermissionFragment" />
     </fragment>
     <fragment
         android:id="@+id/setupFragment"
@@ -39,4 +42,8 @@
         android:id="@+id/settingsFragment"
         android:name="id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.fragments.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/noPermissionFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.fragments.NoPermissionFragment"
+        android:label="NoPermissionFragment" />
 </navigation>

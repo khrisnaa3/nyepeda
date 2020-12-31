@@ -1,6 +1,7 @@
 package id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.fragments
 
 import android.Manifest
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.View
@@ -53,8 +54,10 @@ class CycleFragment : Fragment(R.layout.fragment_cycle), EasyPermissions.Permiss
 
     override fun onPermissionsDenied(requestCode: Int, perms: MutableList<String>) {
         if (EasyPermissions.somePermissionPermanentlyDenied(this, perms)) {
+            findNavController().navigate(R.id.action_cycleFragment_to_noPermissionFragment)
             AppSettingsDialog.Builder(this).build().show()
         } else {
+            findNavController().navigate(R.id.action_cycleFragment_to_noPermissionFragment)
             requestPermissions()
         }
     }

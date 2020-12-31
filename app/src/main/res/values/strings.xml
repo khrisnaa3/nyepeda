@@ -25,6 +25,7 @@
     <string name="minute">Minute</string>
     <string name="weight">Weight:</string>
     <string name="unit" translatable="false">KG</string>
-    <string name="sort">"Sort by: "</string>
+    <string name="sort">Sort by: </string>
+    <string name="noperm">This application needs your location permission to track and calculate your location/distance. Please allow location permission. Thank you.</string>
     <string name="google_maps_key" translatable="false">AIzaSyCFXr4eNn_3PI--VrbsZUr05f4G7fsqK_Q</string>
 </resources>

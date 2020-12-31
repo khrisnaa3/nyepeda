@@ -27,6 +27,13 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
             tvName.text = it.name
         })
 
+        btnCalc.setOnClickListener {
+            if (!etWeight.text.isNullOrEmpty()) {
+                val number = etWeight.text.toString().toDouble()
+                tvRes.text = weightCalculation(number).toString()
+            }
+        }
+
         weightViewModel = ViewModelProvider(this)[WeightViewModel::class.java]
         weightViewModel.weight.observe(viewLifecycleOwner, Observer {
             tvWeight.text = getString(R.string.weight) + " " + it.weight.toString() + " " + getString(R.string.unit)
@@ -34,6 +41,14 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
         btnAlarm.setOnClickListener {
             setAlarm()
+        }
+    }
+
+    private external fun weightCalculation(number: Double): Double
+
+    companion object {
+        init {
+            System.loadLibrary("cpp_code")
         }
     }
 
