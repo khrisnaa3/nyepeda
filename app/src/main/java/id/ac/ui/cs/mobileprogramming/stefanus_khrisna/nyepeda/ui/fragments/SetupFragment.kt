@@ -24,6 +24,10 @@ class SetupFragment : Fragment(R.layout.fragment_setup) {
         tvContinue.setOnClickListener {
             findNavController().navigate(R.id.action_setupFragment_to_cycleFragment)
         }
+        
+        btnGL.setOnClickListener {
+            findNavController().navigate(R.id.action_setupFragment_to_openGlFragment)
+        }
     }
 
 }

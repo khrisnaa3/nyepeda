@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_setupFragment_to_cycleFragment"
             app:destination="@id/cycleFragment" />
+        <action
+            android:id="@+id/action_setupFragment_to_openGlFragment"
+            app:destination="@id/openGlFragment" />
     </fragment>
     <fragment
         android:id="@+id/statisticsFragment"
@@ -46,4 +49,8 @@
         android:id="@+id/noPermissionFragment"
         android:name="id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.ui.fragments.NoPermissionFragment"
         android:label="NoPermissionFragment" />
+    <fragment
+        android:id="@+id/openGlFragment"
+        android:name="id.ac.ui.cs.mobileprogramming.stefanus_khrisna.nyepeda.openGL.OpenGlFragment"
+        android:label="OpenGlFragment" />
 </navigation>
